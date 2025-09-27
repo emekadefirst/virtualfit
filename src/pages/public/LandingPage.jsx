@@ -25,7 +25,7 @@ const HeroSection = () => {
 
           <div className="mt-12 flex flex-col sm:flex-row gap-6 justify-center">
             <button
-              onClick={() => navigate("/signup")}
+              onClick={() => navigate("/dashboard")}
               className="bg-gray-900 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
               Start Trying On
