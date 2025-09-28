@@ -22,7 +22,7 @@ const Footer = () => {
               <a
                 href="#"
                 className="w-10 h-10 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center transition-colors duration-300 group"
-                aria-label="Twitter"
+                aria-label={formatMessage({ id: "footer.social.twitter" })}
               >
                 <svg
                   className="w-5 h-5 text-gray-400 group-hover:text-white transition-colors duration-300"
@@ -35,7 +35,7 @@ const Footer = () => {
               <a
                 href="#"
                 className="w-10 h-10 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center transition-colors duration-300 group"
-                aria-label="LinkedIn"
+                aria-label={formatMessage({ id: "footer.social.linkedin" })}
               >
                 <svg
                   className="w-5 h-5 text-gray-400 group-hover:text-white transition-colors duration-300"
@@ -48,7 +48,7 @@ const Footer = () => {
               <a
                 href="#"
                 className="w-10 h-10 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center transition-colors duration-300 group"
-                aria-label="GitHub"
+                aria-label={formatMessage({ id: "footer.social.github" })}
               >
                 <svg
                   className="w-5 h-5 text-gray-400 group-hover:text-white transition-colors duration-300"

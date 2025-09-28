@@ -1,5 +1,6 @@
+// src/locales/kr.js
 const kr = {
-  // Navbar
+  // Navbar (existing keys)
   "navbar.about": "소개",
   "navbar.store": "스토어",
   "navbar.api": "API",
@@ -8,14 +9,14 @@ const kr = {
   "navbar.getStarted": "시작하기",
   "navbar.brand": "버추얼핏",
 
-  // Hero Section
+  // Hero Section (existing keys)
   "hero.title": "패션을 입어보세요",
   "hero.subtitle": "가상으로",
   "hero.description": "사진을 업로드하고, 무한한 의상을 탐색하며, 스타일을 공유하세요. 피팅룸이 필요 없습니다.",
   "hero.startButton": "가상 착용 시작",
   "hero.signInButton": "로그인",
 
-  // About Section
+  // About Section (existing keys)
   "about.label": "버추얼핏 소개",
   "about.title": "온라인 쇼핑 혁신",
   "about.p1": "버추얼핏은 즉각적인 가상 피팅 경험을 제공하여 온라인 쇼핑 방식을 혁신합니다.",
@@ -23,7 +24,7 @@ const kr = {
   "about.p3": "우리의 목표: 온라인 쇼핑을 자신감 있고 재미있게 만드는 것.",
   "about.imageAlt": "가상 피팅 기술",
 
-  // Features Section
+  // Features Section (existing keys)
   "features.label": "왜 선택해야 할까요",
   "features.title": "현대에 맞춘 플랫폼",
   "features.description": "첨단 기술과 매끄러운 사용자 경험이 결합하여 미래형 온라인 패션 쇼핑을 만듭니다.",
@@ -36,7 +37,7 @@ const kr = {
   "features.feature4.title": "소셜 리워드",
   "features.feature4.desc": "가상 스타일을 공유하여 포인트를 적립하고 바이럴 성장과 사용자 참여를 유도합니다.",
 
-  // Gallery Section
+  // Gallery Section (existing keys)
   "gallery.label": "스타일 갤러리",
   "gallery.title": "작동 모습을 확인하세요",
   "gallery.description": "버추얼핏이 즉각적인 가상 착용으로 쇼핑 경험을 어떻게 바꾸는지 확인하세요.",
@@ -47,10 +48,83 @@ const kr = {
   "gallery.item3.title": "트렌디 스타일",
   "gallery.item3.desc": "최신 패션 트렌드",
 
-  // Demo Video Section
+  // Demo Video Section (existing keys)
   "video.label": "데모 영상",
   "video.title": "마법을 경험하세요",
-  "video.description": "가상 착용 기술이 실시간으로 작동하는 모습을 확인하세요. 업로드, 착용, 공유 - 이렇게 간단합니다."
+  "video.description": "가상 착용 기술이 실시간으로 작동하는 모습을 확인하세요. 업로드, 착용, 공유 - 이렇게 간단합니다.",
+
+  // Footer Section (existing keys)
+  "footer.description": "버추얼핏은 가상 피팅 기술로 온라인 쇼핑을 혁신하며, 모두에게 패션을 더 접근 가능하고 재미있게 만듭니다.",
+  "footer.product": "제품",
+  "footer.features": "기능",
+  "footer.pricing": "가격",
+  "footer.support": "지원",
+  "footer.helpCenter": "도움말 센터",
+  "footer.contact": "문의하기",
+  "footer.documentation": "문서",
+  "footer.status": "시스템 상태",
+  "footer.community": "커뮤니티",
+  "footer.stayInTheLoop": "최신 소식 받기",
+  "footer.newsletterDescription": "최신 업데이트와 독점 제안을 받으려면 뉴스레터에 가입하세요.",
+  "footer.emailPlaceholder": "이메일을 입력하세요",
+  "footer.subscribe": "구독",
+  "footer.copyright": "© {year} 버추얼핏. 모든 권리 보유.",
+  "footer.privacy": "개인정보 처리방침",
+  "footer.terms": "서비스 약관",
+  "footer.cookies": "쿠키",
+  "footer.madeWithLove": "{heart} 버추얼핏이 사랑으로 만들었습니다",
+  "footer.social.twitter": "트위터",
+  "footer.social.linkedin": "링크드인",
+  "footer.social.github": "깃허브",
+
+  // Dashboard Section (existing keys)
+  "dashboard.title": "대시보드",
+  "dashboard.description": "단계별로 사진을 캡처하거나 업로드하여 시작하세요.",
+  "dashboard.startButton": "업로드 프로세스 시작",
+  "dashboard.step1.title": "정면 뷰",
+  "dashboard.step1.desc": "정면 얼굴의 선명한 사진을 업로드하거나 캡처하세요",
+  "dashboard.step2.title": "왼쪽 뷰",
+  "dashboard.step2.desc": "얼굴의 왼쪽 측면의 선명한 사진을 업로드하거나 캡처하세요",
+  "dashboard.step3.title": "오른쪽 뷰",
+  "dashboard.step3.desc": "얼굴의 오른쪽 측면의 선명한 사진을 업로드하거나 캡처하세요",
+  "dashboard.step4.title": "의상",
+  "dashboard.step4.desc": "원하는 의상의 사진을 업로드하거나 캡처하세요",
+  "dashboard.captureButton": "사진 캡처",
+  "dashboard.cancelButton": "취소",
+  "dashboard.uploadButton": "업로드",
+  "dashboard.cameraButton": "카메라",
+  "dashboard.nextButton": "다음",
+  "dashboard.finishButton": "완료",
+  "dashboard.noImage": "이미지가 선택되지 않았습니다",
+  "dashboard.errorCamera": "카메라에 접근할 수 없습니다. 권한을 확인하거나 업로드 옵션을 사용하세요.",
+  "dashboard.errorNoImage": "계속하기 전에 이미지를 업로드하거나 캡처하세요.",
+
+  // Login Section (existing keys)
+  "login.title": "다시 오신 것을 환영합니다!",
+  "login.description": "가상 패션 여정을 시작하세요",
+  // "login.googleButton": "구글로 로그인",
+  // "login.orDivider": "또는",
+  "login.emailPlaceholder": "이메일 주소",
+  "login.passwordPlaceholder": "비밀번호",
+  "login.submitButton": "로그인",
+  "login.loading": "로딩 중...",
+  "login.noAccount": "계정이 없으신가요?",
+  "login.signupLink": "가입하기!",
+
+  // Signup Section
+  "signup.title": "버추얼핏 가입",
+  "signup.description": "가상 패션 여정을 시작하세요",
+  // "signup.googleButton": "구글로 계속하기", // Uncomment if Google signup is re-enabled
+  // "signup.orDivider": "또는", // Uncomment if divider is re-enabled
+  "signup.firstNamePlaceholder": "이름",
+  "signup.lastNamePlaceholder": "성",
+  "signup.emailPlaceholder": "이메일 주소",
+  "signup.passwordPlaceholder": "비밀번호",
+  "signup.submitButton": "계정 생성",
+  "signup.loading": "계정 생성 중...",
+  "signup.error": "가입 실패. 다시 시도해주세요.",
+  "signup.alreadyHaveAccount": "이미 계정이 있으신가요?",
+  "signup.signinLink": "로그인",
 };
 
 export default kr;

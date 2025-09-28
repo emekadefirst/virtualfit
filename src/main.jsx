@@ -5,7 +5,7 @@ import { IntlProvider } from "react-intl";
 
 import WebLayout from './componets/public/layout/weblayout.jsx';
 import './assets/style.css';
-import HeroSection from './pages/public/LandingPage.jsx';
+import LandingPage from './pages/public/LandingPage.jsx';
 import LoginPage from './pages/public/LoginPage.jsx';
 import SignupPage from './pages/public/SignupPage.jsx';
 import SupportPage from './pages/public/SupportPage.jsx';
@@ -26,7 +26,7 @@ const App = () => {
         <Routes>
           {/* Public routes */}
           <Route path="/" element={<WebLayout setLocale={setLocale} />}>
-            <Route index element={<HeroSection />} />
+            <Route index element={<LandingPage />} />
             <Route path="login" element={<LoginPage />} />
             <Route path="signup" element={<SignupPage />} />
             <Route path="support" element={<SupportPage />} />

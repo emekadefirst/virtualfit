@@ -3,8 +3,10 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { SignupService } from "../../services/auth";
+import { FormattedMessage, useIntl } from "react-intl";
 
 export default function SignupPage() {
+  const { formatMessage } = useIntl();
   const [showPassword, setShowPassword] = useState(false);
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -27,10 +29,10 @@ export default function SignupPage() {
         password,
       };
       await SignupService(JSON.stringify(data));
-      navigate("/login"); 
+      navigate("/login");
     } catch (err) {
       console.error("Signup error:", err);
-      toast.error("Signup failed. Please try again.");
+      toast.error(formatMessage({ id: "signup.error" }));
     } finally {
       setIsLoading(false);
     }
@@ -47,33 +49,41 @@ export default function SignupPage() {
       <div className="relative bg-white/80 backdrop-blur-sm shadow-2xl rounded-3xl w-full max-w-md p-8 border border-gray-100">
         <div className="text-center mb-6">
           <h1 className="text-3xl font-black text-gray-900 mb-2 tracking-tight">
-            Join VirtualFit
+            <FormattedMessage id="signup.title" />
           </h1>
-          <p className="text-gray-600">Start your virtual fashion journey</p>
+          <p className="text-gray-600">
+            <FormattedMessage id="signup.description" />
+          </p>
         </div>
 
-        {/* <div className="space-y-3 mb-6">
-          <button className="w-full py-3 border-2 border-gray-200 rounded-2xl flex items-center justify-center gap-3 hover:bg-gray-50 hover:border-gray-300 transition-all duration-300 font-medium">
+        {/* Uncomment if Google signup is re-enabled
+        <div className="space-y-3 mb-6">
+          <button
+            className="w-full py-3 border-2 border-gray-200 rounded-2xl flex items-center justify-center gap-3 hover:bg-gray-50 hover:border-gray-300 transition-all duration-300 font-medium"
+          >
             <img
               src="https://www.svgrepo.com/show/355037/google.svg"
-              alt="Google"
+              alt={formatMessage({ id: "signup.googleButton" })}
               className="w-5 h-5"
             />
-            Continue with Google
+            <FormattedMessage id="signup.googleButton" />
           </button>
         </div>
 
         <div className="flex items-center my-6">
           <hr className="flex-1 border-gray-200" />
-          <span className="px-3 text-gray-500 text-sm">or</span>
+          <span className="px-3 text-gray-500 text-sm">
+            <FormattedMessage id="signup.orDivider" />
+          </span>
           <hr className="flex-1 border-gray-200" />
-        </div> */}
+        </div>
+        */}
 
         <form className="space-y-4" onSubmit={handleSubmit}>
           <div className="grid grid-cols-2 gap-3">
             <input
               type="text"
-              placeholder="First name"
+              placeholder={formatMessage({ id: "signup.firstNamePlaceholder" })}
               className="px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-gray-900 focus:outline-none transition-all duration-300"
               required
               value={firstName}
@@ -81,7 +91,7 @@ export default function SignupPage() {
             />
             <input
               type="text"
-              placeholder="Last name"
+              placeholder={formatMessage({ id: "signup.lastNamePlaceholder" })}
               className="px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-gray-900 focus:outline-none transition-all duration-300"
               required
               value={lastName}
@@ -91,7 +101,7 @@ export default function SignupPage() {
 
           <input
             type="email"
-            placeholder="Email address"
+            placeholder={formatMessage({ id: "signup.emailPlaceholder" })}
             className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-gray-900 focus:outline-none transition-all duration-300"
             required
             value={email}
@@ -100,7 +110,7 @@ export default function SignupPage() {
 
           <input
             type={showPassword ? "text" : "password"}
-            placeholder="Password"
+            placeholder={formatMessage({ id: "signup.passwordPlaceholder" })}
             className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-gray-900 focus:outline-none transition-all duration-300"
             required
             value={password}
@@ -112,17 +122,17 @@ export default function SignupPage() {
             disabled={isLoading}
             className="w-full py-3 bg-gray-900 hover:bg-gray-800 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-[1.02]"
           >
-            {isLoading ? "Creating Account..." : "Create Account"}
+            {isLoading ? <FormattedMessage id="signup.loading" /> : <FormattedMessage id="signup.submitButton" />}
           </button>
         </form>
 
         <p className="text-center text-gray-600 mt-6 text-sm">
-          Already have an account?{" "}
+          <FormattedMessage id="signup.alreadyHaveAccount" />{" "}
           <a
             href="/login"
             className="text-gray-900 font-semibold hover:underline"
           >
-            Sign in
+            <FormattedMessage id="signup.signinLink" />
           </a>
         </p>
       </div>
