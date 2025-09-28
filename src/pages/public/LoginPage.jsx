@@ -1,4 +1,38 @@
-export default function SignupPage() {
+import { loginService } from "../../services/auth";
+import { Navigate } from "react-router";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+
+
+export default function LoginPage() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    try {
+      // Prepare data
+      const data = {
+        email,
+        password
+      };
+      const response = await loginService(JSON.stringify(data));
+      if (response.status === 200) {
+        navigate("/dashboard"); 
+      } else {
+        console.log(response.response)
+      }
+    } catch (err) {
+      console.error("Signup error:", err);
+    } finally {
+      setIsLoading(false);
+    }
+  };
     return (
         <>
             <div className="min-h-screen flex items-center justify-center bg-white px-6 py-8">
@@ -18,7 +52,7 @@ export default function SignupPage() {
                         </p>
                     </div>
 
-                    <div className="space-y-3 mb-6">
+                    {/* <div className="space-y-3 mb-6">
                         <button className="w-full py-3 border-2 border-gray-200 rounded-2xl flex items-center justify-center gap-3 hover:bg-gray-50 hover:border-gray-300 transition-all duration-300 font-medium">
                             <img src="https://www.svgrepo.com/show/355037/google.svg" alt="Google" className="w-5 h-5" />
                             Login  Google
@@ -29,14 +63,16 @@ export default function SignupPage() {
                         <hr className="flex-1 border-gray-200" />
                         <span className="px-3 text-gray-500 text-sm">or</span>
                         <hr className="flex-1 border-gray-200" />
-                    </div>
+                    </div> */}
 
-                    <form className="space-y-4">
+                    <form className="space-y-4" onSubmit={handleSubmit}>
                         <input
                             type="email"
                             placeholder="Email address"
                             className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-gray-900 focus:outline-none transition-all duration-300"
                             required
+                            value={email}
+                             onChange={(e) => setEmail(e.target.value)}
                         />
 
                         <input
@@ -44,13 +80,16 @@ export default function SignupPage() {
                             placeholder="Password"
                             className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-gray-900 focus:outline-none transition-all duration-300"
                             required
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
                         />
 
                         <button
                             type="submit"
+                             disabled={isLoading}
                             className="w-full py-3 bg-gray-900 hover:bg-gray-800 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-[1.02]"
                         >
-                            Login 
+                            {isLoading ? "loading..." : "Login"}
                         </button>
                     </form>
 

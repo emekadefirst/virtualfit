@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+
+/* Hide Google Translate top banner */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+body {
+  top: 0px !important;
+}
+
+/* Hide Google Translate logo + dropdown if injected */
+.goog-logo-link, .goog-te-gadget {
+  display: none !important;
+}
