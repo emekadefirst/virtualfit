@@ -55,3 +55,15 @@ export async function getUser() {
     throw err;
   }
 }
+
+
+export async function logoutService(formatMessage) {
+  try {
+    localStorage.removeItem("access_token");
+    localStorage.removeItem("refresh_token");
+    toast.success(formatMessage({ id: "auth.logoutSuccess" }));
+  } catch (error) {
+    console.error("Logout error:", error);
+    toast.error(formatMessage({ id: "auth.unexpectedError" }));
+  }
+}

@@ -8,23 +8,25 @@ const en = {
   "navbar.login": "Log in",
   "navbar.getStarted": "Get Started",
   "navbar.brand": "VirtualFit",
+  "navbar.logout": "Logout",
+  "navbar.welcomeUser": "Welcome, {firstName} {lastName}",
+  // New keys for language dropdown
+  "navbar.languageEN": "English",
+  "navbar.languageKR": "Korean",
+  "navbar.languageSelect": "Select language",
 
-  // Hero Section (existing keys)
+  // ... (other existing keys for hero, about, features, gallery, video, footer, dashboard, login, signup, auth)
   "hero.title": "Try On Fashion",
   "hero.subtitle": "Virtually",
   "hero.description": "Upload your photo, explore endless outfits, and share your style with the world. No fitting rooms needed.",
   "hero.startButton": "Start Trying On",
   "hero.signInButton": "Sign In",
-
-  // About Section (existing keys)
   "about.label": "About VirtualFit",
   "about.title": "Revolutionizing Online Shopping",
   "about.p1": "VirtualFit transforms how people shop online by providing instant virtual try-on experiences.",
   "about.p2": "We partner with shopping malls and fashion brands worldwide, offering seamless integration with global payment support and innovative reward systems.",
   "about.p3": "Our mission: Make online shopping confident, engaging, and fun again.",
   "about.imageAlt": "Virtual Try-On Technology",
-
-  // Features Section (existing keys)
   "features.label": "Why Choose Us",
   "features.title": "Built for the Modern World",
   "features.description": "Advanced technology meets seamless user experience to create the future of online fashion retail.",
@@ -36,8 +38,6 @@ const en = {
   "features.feature3.desc": "Multi-language support with worldwide payment processing and localized experiences.",
   "features.feature4.title": "Social Rewards",
   "features.feature4.desc": "Earn credits by sharing your virtual looks, creating viral growth and user engagement.",
-
-  // Gallery Section (existing keys)
   "gallery.label": "Style Gallery",
   "gallery.title": "See It in Action",
   "gallery.description": "Discover how VirtualFit transforms your shopping experience with instant virtual try-ons across every style and season.",
@@ -47,13 +47,9 @@ const en = {
   "gallery.item2.desc": "Sophisticated styles",
   "gallery.item3.title": "Trendy Styles",
   "gallery.item3.desc": "Latest fashion trends",
-
-  // Demo Video Section (existing keys)
   "video.label": "Demo Video",
   "video.title": "Experience the Magic",
   "video.description": "Watch how our virtual try-on technology works in real-time. Upload, try on, and share - it's that simple.",
-
-  // Footer Section (existing keys)
   "footer.description": "VirtualFit is revolutionizing online shopping with virtual try-on technology, making fashion accessible and fun for everyone.",
   "footer.product": "Product",
   "footer.features": "Features",
@@ -76,8 +72,6 @@ const en = {
   "footer.social.twitter": "Twitter",
   "footer.social.linkedin": "LinkedIn",
   "footer.social.github": "GitHub",
-
-  // Dashboard Section (existing keys)
   "dashboard.title": "Dashboard",
   "dashboard.description": "Capture or upload your pictures step by step to get started.",
   "dashboard.startButton": "Start Upload Process",
@@ -98,24 +92,25 @@ const en = {
   "dashboard.noImage": "No image selected",
   "dashboard.errorCamera": "Unable to access camera. Please check permissions or use the upload option.",
   "dashboard.errorNoImage": "Please upload or capture an image before proceeding.",
-
-  // Login Section (existing keys)
   "login.title": "Welcome Back!",
   "login.description": "Start your virtual fashion journey",
-  // "login.googleButton": "Login with Google",
-  // "login.orDivider": "or",
   "login.emailPlaceholder": "Email address",
   "login.passwordPlaceholder": "Password",
   "login.submitButton": "Login",
   "login.loading": "Loading...",
   "login.noAccount": "Don't have an account?",
   "login.signupLink": "Signup!",
-
-  // Signup Section
+  "auth.loginSuccess": "Login successful!",
+  "auth.loginFailed": "Login failed. Please check your credentials.",
+  "auth.signupSuccess": "Signup successful!",
+  "auth.signupFailed": "Signup failed. Please check your credentials.",
+  "auth.logoutSuccess": "Logout successful!",
+  "auth.unexpectedError": "An unexpected error occurred. Please try again.",
+  "auth.networkError": "Network error. Please check your connection.",
+  "auth.sessionExpired": "Session expired. Please login again.",
+  "auth.getUserFailed": "Failed to load user data",
   "signup.title": "Join VirtualFit",
   "signup.description": "Start your virtual fashion journey",
-  // "signup.googleButton": "Continue with Google", // Uncomment if Google signup is re-enabled
-  // "signup.orDivider": "or", // Uncomment if divider is re-enabled
   "signup.firstNamePlaceholder": "First name",
   "signup.lastNamePlaceholder": "Last name",
   "signup.emailPlaceholder": "Email address",

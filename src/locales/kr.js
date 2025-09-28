@@ -8,23 +8,25 @@ const kr = {
   "navbar.login": "로그인",
   "navbar.getStarted": "시작하기",
   "navbar.brand": "버추얼핏",
+  "navbar.logout": "로그아웃",
+  "navbar.welcomeUser": "{firstName} {lastName}님, 환영합니다",
+  // New keys for language dropdown
+  "navbar.languageEN": "영어",
+  "navbar.languageKR": "한국어",
+  "navbar.languageSelect": "언어 선택",
 
-  // Hero Section (existing keys)
+  // ... (other existing keys for hero, about, features, gallery, video, footer, dashboard, login, signup, auth)
   "hero.title": "패션을 입어보세요",
   "hero.subtitle": "가상으로",
   "hero.description": "사진을 업로드하고, 무한한 의상을 탐색하며, 스타일을 공유하세요. 피팅룸이 필요 없습니다.",
   "hero.startButton": "가상 착용 시작",
   "hero.signInButton": "로그인",
-
-  // About Section (existing keys)
   "about.label": "버추얼핏 소개",
   "about.title": "온라인 쇼핑 혁신",
   "about.p1": "버추얼핏은 즉각적인 가상 피팅 경험을 제공하여 온라인 쇼핑 방식을 혁신합니다.",
   "about.p2": "전 세계 쇼핑몰 및 패션 브랜드와 협력하여 글로벌 결제 지원과 혁신적인 리워드 시스템을 제공합니다.",
   "about.p3": "우리의 목표: 온라인 쇼핑을 자신감 있고 재미있게 만드는 것.",
   "about.imageAlt": "가상 피팅 기술",
-
-  // Features Section (existing keys)
   "features.label": "왜 선택해야 할까요",
   "features.title": "현대에 맞춘 플랫폼",
   "features.description": "첨단 기술과 매끄러운 사용자 경험이 결합하여 미래형 온라인 패션 쇼핑을 만듭니다.",
@@ -36,8 +38,6 @@ const kr = {
   "features.feature3.desc": "다국어 지원, 전 세계 결제 처리 및 현지화된 경험 제공.",
   "features.feature4.title": "소셜 리워드",
   "features.feature4.desc": "가상 스타일을 공유하여 포인트를 적립하고 바이럴 성장과 사용자 참여를 유도합니다.",
-
-  // Gallery Section (existing keys)
   "gallery.label": "스타일 갤러리",
   "gallery.title": "작동 모습을 확인하세요",
   "gallery.description": "버추얼핏이 즉각적인 가상 착용으로 쇼핑 경험을 어떻게 바꾸는지 확인하세요.",
@@ -47,13 +47,9 @@ const kr = {
   "gallery.item2.desc": "세련된 스타일",
   "gallery.item3.title": "트렌디 스타일",
   "gallery.item3.desc": "최신 패션 트렌드",
-
-  // Demo Video Section (existing keys)
   "video.label": "데모 영상",
   "video.title": "마법을 경험하세요",
   "video.description": "가상 착용 기술이 실시간으로 작동하는 모습을 확인하세요. 업로드, 착용, 공유 - 이렇게 간단합니다.",
-
-  // Footer Section (existing keys)
   "footer.description": "버추얼핏은 가상 피팅 기술로 온라인 쇼핑을 혁신하며, 모두에게 패션을 더 접근 가능하고 재미있게 만듭니다.",
   "footer.product": "제품",
   "footer.features": "기능",
@@ -76,8 +72,6 @@ const kr = {
   "footer.social.twitter": "트위터",
   "footer.social.linkedin": "링크드인",
   "footer.social.github": "깃허브",
-
-  // Dashboard Section (existing keys)
   "dashboard.title": "대시보드",
   "dashboard.description": "단계별로 사진을 캡처하거나 업로드하여 시작하세요.",
   "dashboard.startButton": "업로드 프로세스 시작",
@@ -98,24 +92,25 @@ const kr = {
   "dashboard.noImage": "이미지가 선택되지 않았습니다",
   "dashboard.errorCamera": "카메라에 접근할 수 없습니다. 권한을 확인하거나 업로드 옵션을 사용하세요.",
   "dashboard.errorNoImage": "계속하기 전에 이미지를 업로드하거나 캡처하세요.",
-
-  // Login Section (existing keys)
   "login.title": "다시 오신 것을 환영합니다!",
   "login.description": "가상 패션 여정을 시작하세요",
-  // "login.googleButton": "구글로 로그인",
-  // "login.orDivider": "또는",
   "login.emailPlaceholder": "이메일 주소",
   "login.passwordPlaceholder": "비밀번호",
   "login.submitButton": "로그인",
   "login.loading": "로딩 중...",
   "login.noAccount": "계정이 없으신가요?",
   "login.signupLink": "가입하기!",
-
-  // Signup Section
+  "auth.loginSuccess": "로그인 성공!",
+  "auth.loginFailed": "로그인 실패. 자격 증명을 확인하세요.",
+  "auth.signupSuccess": "가입 성공!",
+  "auth.signupFailed": "가입 실패. 자격 증명을 확인하세요.",
+  "auth.logoutSuccess": "로그아웃 성공!",
+  "auth.unexpectedError": "예기치 않은 오류가 발생했습니다. 다시 시도해주세요.",
+  "auth.networkError": "네트워크 오류. 연결을 확인하세요.",
+  "auth.sessionExpired": "세션이 만료되었습니다. 다시 로그인하세요.",
+  "auth.getUserFailed": "사용자 데이터를 불러오지 못했습니다.",
   "signup.title": "버추얼핏 가입",
   "signup.description": "가상 패션 여정을 시작하세요",
-  // "signup.googleButton": "구글로 계속하기", // Uncomment if Google signup is re-enabled
-  // "signup.orDivider": "또는", // Uncomment if divider is re-enabled
   "signup.firstNamePlaceholder": "이름",
   "signup.lastNamePlaceholder": "성",
   "signup.emailPlaceholder": "이메일 주소",
