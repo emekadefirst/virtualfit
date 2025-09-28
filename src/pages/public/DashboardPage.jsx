@@ -124,7 +124,7 @@ export default function Dashboard() {
           front_image: images.front ? { id: images.front.id, image_url: images.front.url } : { id: "", image_url: "" },
           l_image: images.left ? { id: images.left.id, image_url: images.left.url } : { id: "", image_url: "" },
           r_image: images.right ? { id: images.right.id, image_url: images.right.url } : { id: "", image_url: "" },
-          user_full_image: { id: "", image_url: "" }, // Not used
+          user_full_image: { id: images.front.id, image_url: images.front.url }, // Not used
         };
         console.log(payload)
         const imageUrl = await generateImage(payload, formatMessage);
