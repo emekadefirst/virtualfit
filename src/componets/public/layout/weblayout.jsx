@@ -5,8 +5,10 @@ import Navbar from "../navbar";
 import Footer from "../footer";
 import { Outlet } from "react-router-dom";
 import { messages } from "../../../locales/message";
+import { useLocation } from "react-router-dom";
 
 const WebLayout = () => {
+  const location = useLocation();
   const [locale, setLocale] = useState(() => {
     const browserLocale = navigator.language.split("-")[0];
     return messages[browserLocale] ? browserLocale : "en";
@@ -16,7 +18,7 @@ const WebLayout = () => {
     <IntlProvider messages={messages[locale]} locale={locale} defaultLocale="en">
       <div className="min-h-screen flex flex-col">
    
-        <Navbar locale={locale} setLocale={setLocale} />
+        <Navbar locale={locale} key={location.pathname} setLocale={setLocale} />
 
         <main className="flex-1">
           <Outlet />

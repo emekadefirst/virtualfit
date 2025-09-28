@@ -14,6 +14,15 @@ const en = {
   "navbar.languageEN": "English",
   "navbar.languageKR": "Korean",
   "navbar.languageSelect": "Select language",
+ "dashboard.downloadButton": "Download Image",
+
+
+  "imageProcessor.loadError": "Failed to load one or more images.",
+  "imageProcessor.combineError": "Failed to combine images. Please try again.",
+  "dashboard.compositeImageAlt": "Composite image of your face views",
+  "dashboard.resultTitle": "Your Combined Face Views",
+  "dashboard.resultDescription": "Here’s your combined image of front, left, and right face views.",
+  "dashboard.combineSuccess": "Images combined successfully!",
 
   // ... (other existing keys for hero, about, features, gallery, video, footer, dashboard, login, signup, auth)
   "hero.title": "Try On Fashion",
@@ -120,6 +129,17 @@ const en = {
   "signup.error": "Signup failed. Please try again.",
   "signup.alreadyHaveAccount": "Already have an account?",
   "signup.signinLink": "Sign in",
+
+  "fileUpload.error": "Failed to upload image. Please try again.",
+  "fileUpload.success": "Image uploaded successfully!",
+
+  "dashboard.resultTitle": "Your Virtual Try-On Preview",
+  "dashboard.resultDescription": "Here’s your generated virtual try-on image.",
+  "dashboard.compositeImageAlt": "Generated virtual try-on image",
+
+  // Generate Image
+  "generateImage.error": "Failed to generate image. Please try again.",
+  "generateImage.success": "Image generated successfully!",
 };
 
 export default en;

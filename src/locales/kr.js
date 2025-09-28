@@ -14,6 +14,15 @@ const kr = {
   "navbar.languageEN": "영어",
   "navbar.languageKR": "한국어",
   "navbar.languageSelect": "언어 선택",
+  "dashboard.downloadButton": "이미지 다운로드",
+
+
+  "imageProcessor.loadError": "하나 이상의 이미지를 로드하지 못했습니다.",
+  "imageProcessor.combineError": "이미지 결합에 실패했습니다. 다시 시도해주세요.",
+  "dashboard.compositeImageAlt": "얼굴 뷰의 합성 이미지",
+  "dashboard.resultTitle": "결합된 얼굴 뷰",
+  "dashboard.resultDescription": "정면, 왼쪽, 오른쪽 얼굴 뷰가 결합된 이미지입니다.",
+  "dashboard.combineSuccess": "이미지가 성공적으로 결합되었습니다!",
 
   // ... (other existing keys for hero, about, features, gallery, video, footer, dashboard, login, signup, auth)
   "hero.title": "패션을 입어보세요",
@@ -120,6 +129,23 @@ const kr = {
   "signup.error": "가입 실패. 다시 시도해주세요.",
   "signup.alreadyHaveAccount": "이미 계정이 있으신가요?",
   "signup.signinLink": "로그인",
+  "fileUpload.error": "이미지 업로드에 실패했습니다. 다시 시도해주세요.",
+  "fileUpload.success": "이미지가 성공적으로 업로드되었습니다!",
+  // Generate Image
+  "generateImage.error": "이미지 생성에 실패했습니다. 다시 시도해주세요.",
+  "generateImage.success": "이미지가 성공적으로 생성되었습니다!",
+  "dashboard.resultTitle": "가상 착용 미리보기",
+  "dashboard.resultDescription": "생성된 가상 착용 이미지를 확인하세요.",
+  "dashboard.compositeImageAlt": "생성된 가상 착용 이미지",
+  "dashboard.downloadButton": "이미지 다운로드",
+
+  // File Upload
+  "fileUpload.error": "이미지 업로드에 실패했습니다. 다시 시도해주세요.",
+  "fileUpload.success": "이미지가 성공적으로 업로드되었습니다!",
+
+  // Generate Image
+  "generateImage.error": "이미지 생성에 실패했습니다. 다시 시도해주세요.",
+  "generateImage.success": "이미지가 성공적으로 생성되었습니다!",
 };
 
 export default kr;

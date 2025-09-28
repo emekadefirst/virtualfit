@@ -25,6 +25,7 @@ export default function LoginPage() {
       const response = await loginService(JSON.stringify(data));
       if (response.status === 200) {
         navigate("/dashboard");
+        window.reloa
       } else {
         console.log(response.response);
       }
